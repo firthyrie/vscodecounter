@@ -1,0 +1,29 @@
+{
+  "name": "mini-counter",
+  "displayName": "Mini Counter",
+  "description": "Мини-плагин для подсчёта символов и секундомера",
+  "version": "1.0.0",
+  "publisher": "Dmitry",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/mini-counter"
+  },
+  "engines": { "vscode": "^1.70.0" },
+  "activationEvents": ["*"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "miniCounter.reset",
+        "title": "Mini Counter: Reset"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "miniCounter.reset",
+        "key": "ctrl+alt+r",
+        "when": "editorTextFocus"
+      }
+    ]
+  }
+}
